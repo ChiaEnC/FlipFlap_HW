@@ -14,8 +14,6 @@ module TsvBuddy
     headers = rows[0]
     data = rows[1..-1]
     @data = data.map{|row| rowToHash(headers, row)} 
-
- 
   end
 
   # to_tsv: converts @data into tsv string
